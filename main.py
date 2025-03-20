@@ -5,7 +5,6 @@ app = FastAPI(
     title="Contacts API", description="API for managing contacts", version="1.0.0"
 )
 
-# Include routes
 app.include_router(contacts_router, prefix="/contacts", tags=["Contacts"])
 
 
